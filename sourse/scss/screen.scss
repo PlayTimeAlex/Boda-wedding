@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,600,300&subset=latin,cyrillic);
+/*font-family: 'Open Sans', sans-serif;*/
+@import url(http://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic);
+/*font-family: 'Philosopher', sans-serif;*/
+
+
+@import "modules/base";
+@import "modules/_grid";
+@import "modules/reset";
+@import "modules/pr";
+@import "modules/b-text";
+//@import "modules/animate";
+.align-right{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+
+@media (max-width: $base__size_sm*1px) {
+    .align-center-sm {
+        text-align: center;
+    }
+}
+@import "modules/b-header";
+@import "modules/b-social";
+@import "modules/b-tnav";
+@import "modules/b-breadcrumbs";
+@import "modules/b-mcontent";
+@import "modules/b-footer";
+@import "modules/_colorbox";
+
+@import "modules/b-contacts";
+@import "modules/b-map";
+@import "modules/b-contacts-inner";
+
+@import "modules/b-services";
+
+@import "modules/b-slider";
+@import "modules/b-scontent";
+
+@import "modules/b-person-text";
+
+@import "modules/b-menu";
+
+@import "modules/b-video";
+
+

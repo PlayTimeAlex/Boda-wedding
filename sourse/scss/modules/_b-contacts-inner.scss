@@ -1,0 +1,60 @@
+.b-contacts-inner{
+    text-align: center;
+    p{
+        color: #2D2D2D;
+        $font-size: 17;
+        font-size: em($font-size);
+        line-height: 1.65;
+        strong{
+            font-weight: 600;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    &__name{
+        color: #7A1E1D;
+        $font-size: 20;
+        font-size: em($font-size);
+        font-weight: 700;
+        font-style: italic;
+        font-family: $base__second-font;
+        padding: em(12, $font-size);
+    }
+    &__avatar{
+        position: relative;
+        padding-bottom: em(33);
+        margin-bottom: em(13);
+        img{
+            border-radius:50%;
+            display: block;
+            margin: 0 auto;
+        }
+        .separator{
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            background-color: #AC9A68;
+            border-radius: 50%;
+            margin-left: -3px;
+            &:after, &:before{
+                content:"";
+                display: block;
+                position: absolute;
+                width: 60px;
+                height: 1px;
+                background-color: #AC9A68;
+                left: em(-75);
+                top: 50%;
+            }
+            &:after{
+                left: auto;
+                right: em(-75);
+
+            }
+        }
+    }
+}

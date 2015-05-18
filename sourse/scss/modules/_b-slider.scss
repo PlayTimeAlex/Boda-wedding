@@ -1,0 +1,91 @@
+/* Browser Resets
+*********************************/
+.flex-container a:active,
+.b-flexslider a:active,
+.flex-container a:focus,
+.b-flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.b-flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.b-flexslider .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+.b-slider{
+    margin: em(50) 0;
+
+    &__wrap{
+        background: url(../images/slider_bg.jpg) no-repeat #000;
+        background-size: cover;
+    }
+    &__slider{
+        width: 100%;
+        max-width: $base__s-max-width*1px;
+        margin: 0 auto;
+        position: relative;
+        box-shadow: 0 0 26.9px 5.1px rgba(56, 36, 34, 0.19);
+        overflow: hidden;
+    }
+    .slides{
+        li{
+            list-style:none;
+            display: none;
+            > img{
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+    .flex-prev, .flex-next{
+        display: block;
+        position: absolute;
+        left: em(27);
+        top: 50%;
+        margin-top: -45px;
+        width: 89px;
+        height: 89px;
+        cursor: pointer;
+        z-index: 10;
+        background: url(../images/b64/slider-prev.png) no-repeat center center;
+        &.flex-disabled{
+            display: none;
+        }
+    }
+    .flex-next{
+        left: auto;
+        right: em(27);
+        background: url(../images/b64/slider-next.png) no-repeat center center;
+    }
+    &__count{
+        color: #646464;
+        $font-size: 16;
+        font-size: em($font-size);
+        background: url(../images/b64/photo.png) no-repeat left center;
+        padding: em(8, $font-size) 0 em(8, $font-size) 60px;
+    }
+    &__header{
+        padding: 0 0 em(40) em(29);
+        font-family: "Georgia";
+        font-style: italic;
+        .title{
+            color: #7A1E1D;
+            $font-size: 20;
+            font-size: em($font-size);
+            font-weight: 700;
+            display: inline-block;
+            padding-right: em(18, $font-size);
+        }
+    }
+}

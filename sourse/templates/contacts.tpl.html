@@ -1,0 +1,81 @@
+@@include('blocks/_head.html')
+<header class="b-header">
+    @@include('blocks/_b-header__top.html')
+    @@include('blocks/_b-tnav.html')
+</header>
+@@include('blocks/_b-breadcrumbs.html')
+<div class="b-mcontent">
+    <div class="b-mcontent__pattern"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="b-mcontent__title">
+                    <h1 class="title">Контакты</h1>
+                </div>
+                <div class="b-text">
+                    <p>Алексей и Ольга Журба — одни из создателей международного бренда ImoLife и Центра Индивидуального Развития «УСПЕХ» с 2006 года. Мы вместе уже 23 года. Мы можем с уверенностью назвать себя людьми, которые создали себя заново, основываясь на своих ценностях. Наши программы прошли более 10000 учеников с Украины, России, Европы и Средней Азии.</p>
+                </div>
+                <div class="b-contacts-inner">
+                    <div class="b-contacts-inner__avatar">
+                        <img src="images/content/contacts_av.jpg" alt="Мария Маслак (Худайбердина)"/>
+                        <span class="separator"></span>
+                    </div>
+                    <div class="b-contacts-inner__name">Мария Маслак (Худайбердина)</div>
+                    <p><strong>Телефон:</strong> <a href="tel:+79100096878">+7 (910) 009 68 78</a></p>
+                    <p><strong>Whatsapp:</strong> +7 (910) 009 68 78</p>
+                    <p><strong>E-mail:</strong> <a href="mailto:mail@domain.com">mail@domain.com</a></p>
+                    <p><strong>Skype:</strong> <a href="skype:boda.wedding?call">boda.wedding</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-map">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="b-map__header">
+                        <span class="title">Адрес</span>
+                        <span class="b-map__address">Carrer d'Asturies, 11-17252 Calonge, Espanya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-map__container">
+            <div class="b-map__map" id="contact-map"></div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(55.753559, 37.609218);
+                var mapCanvas = document.getElementById('contact-map');
+                var mapOptions = {
+                    center: new google.maps.LatLng(55.753559, 37.609218),
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scrollwheel: false
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var image = 'images/content/map_icon.png';
+
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    title:"Boda wedding",
+                    icon: image
+                });
+
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </div>
+    <div class="container">
+        <div class="align-center">
+            <div class="b-social b-social_brown b-social_db">
+                <a target="_blank" class="b-social__item b-social__item_vk" href="#"></a><a target="_blank" class="b-social__item b-social__item_inst" href="#"></a><a
+                target="_blank" class="b-social__item b-social__item_fb" href="#"></a><a target="_blank" class="b-social__item b-social__item_yt" href="#"></a><a target="_blank" class="b-social__item b-social__item_vm" href="#"></a>
+            </div>
+        </div>
+    </div>
+    @@include('blocks/_b-contacts.html')
+</div>
+@@include('blocks/_b-footer.html')

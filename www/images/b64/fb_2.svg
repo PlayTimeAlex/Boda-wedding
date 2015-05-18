@@ -1,0 +1,3 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="-6.281 -2 20 20"><defs><path id="a" d="M0 0h7.437v16H0z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" fill="#CDC2A4" d="M7.146 8.006H4.903V16h-3.32V8.006H0V5.182h1.582V3.354C1.582 2.046 2.202 0 4.934 0l2.46.01v2.742H5.61c-.29 0-.705.146-.705.77v1.66h2.533l-.29 2.824z"/></svg>

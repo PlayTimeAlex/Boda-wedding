@@ -1,0 +1,23 @@
+.b-tnav{
+    border-bottom:2px solid #6d4747;
+    position: relative;
+    z-index: 10;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        color: #7A1E1D;
+        $font-size: 14;
+        font-size: em($font-size);
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+        padding: em(20, $font-size) 0;
+    }
+    &__list-item{
+        list-style:none;
+        position: relative;
+    }
+}

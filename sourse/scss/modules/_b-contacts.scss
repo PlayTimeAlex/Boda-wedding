@@ -1,0 +1,76 @@
+.b-contacts{
+    padding: em(119) 0 em(112);
+    text-align: center;
+    z-index: 10;
+    margin-top: em(50);
+    &:before{
+        content:"";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: url(../images/b64/contacts_bg_top.png) repeat-x;
+    }
+    &__title{
+        text-align: center;
+        font-family: 'Philosopher', sans-serif;
+        background: url(../images/b64/footer__title.png) no-repeat center top;
+        $font-size: 40;
+        font-size: em($font-size);
+        text-transform: uppercase;
+        color: rgba(255,255,255, .8);
+        padding: em(29, $font-size) 0;
+        letter-spacing: -1px;
+    }
+    p{
+        color: rgba(255,255,255,.6);
+        $font-size: 16;
+        font-size: em($font-size);
+        font-weight: 300;
+        padding: em(2, $font-size) 0;
+        strong{
+            font-weight: 600;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    .b-social{
+        padding: em(50) 0 em(47);
+    }
+    &__calculate{
+        position: absolute;
+        width: 100%;
+        top: em(-30);
+        left: 0;
+        text-align: center;
+    }
+    &__calculate-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #FFF;
+        $font-size: 14;
+        font-size: em($font-size);
+        font-weight: 600;
+        text-transform: uppercase;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.53);
+        background-color: #99450D;
+        background-image: linear-gradient(to top, #B0511B 0%, #FFCB66 100%);
+        border: 1px solid #EBDCC7;
+        box-shadow: 0 3px 1px #99450D;
+        padding: em(18, $font-size) em(45, $font-size);
+        border-radius:em(40, $font-size);
+        &:hover{
+            background-image: linear-gradient(to top, #FFCB66 0%, #B0511B 100%);
+        }
+    }
+}
+
+@media (max-width: $base__size_xs*1px){
+    .b-contacts{
+        padding: em(40) 0;
+    }
+}

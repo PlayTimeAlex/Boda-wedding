@@ -1,0 +1,55 @@
+.b-video{
+    background: url(../images/video-bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 69.9%;
+    position: relative;
+    z-index: 10;
+    margin-top: em(20);
+    box-shadow: 4.5px 7.8px 9px rgba(0, 0, 0, 0.14);
+    .video{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-clip: content-box;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        padding: em(24);
+        &:after{
+            content:"";
+            display: block;
+            width: em(90);
+            height: em(90);
+            background: url(../images/b64/play.png);
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: em(-45) 0 0 em(-45);
+        }
+    }
+    &__header{
+        padding-top: em(50);
+        font-family: $base__second-font;
+        font-style: italic;
+        .title{
+            color: #7A1E1D;
+            $font-size: 20;
+            font-size: em($font-size);
+            font-weight: 700;
+            display: inline-block;
+            padding-right: em(18, $font-size);
+        }
+        .text{
+            color: #646464;
+            $font-size: 16;
+            font-size: em($font-size);
+            background: url(../images/b64/play2.png) no-repeat left center;
+            padding: em(8, $font-size) 0 em(8, $font-size) 60px;
+        }
+    }
+}

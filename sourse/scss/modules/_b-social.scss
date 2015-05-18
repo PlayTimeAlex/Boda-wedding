@@ -1,0 +1,61 @@
+.b-social{
+    &_db{
+        padding: em(42) 0;
+    }
+    &__item{
+        width: em(20);
+        height: em(20);
+        display: inline-block;
+        opacity: .6;
+        background: no-repeat center center;
+        background-size: cover;
+        margin: 0 em(5);
+        transition:opacity .3s;
+        vertical-align: bottom;
+        &_vk{
+            background-image: url(../images/b64/vk.svg);
+        }
+        &_fb{
+            background-image: url(../images/b64/fb.svg);
+        }
+        &_yt{
+            background-image: url(../images/b64/yt.png);
+        }
+        &_inst{
+            background-image: url(../images/b64/inst.svg);
+        }
+        &_vm{
+            background-image: url(../images/b64/vm.svg);
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }
+    &_brown &__item{
+        &_vk{
+            background-image: url(../images/b64/vk_2.svg);
+        }
+        &_fb{
+            background-image: url(../images/b64/fb_2.svg);
+        }
+        &_yt{
+            background-image: url(../images/b64/yt_2.png);
+        }
+        &_inst{
+            background-image: url(../images/b64/inst_2.svg);
+        }
+        &_vm{
+            background-image: url(../images/b64/vm_2.svg);
+        }
+    }
+}
+
+@media (max-width: $base__size_sm*1px) {
+    .b-social{
+        &__item{
+            width: em(30);
+            height: em(30);
+            margin: 0 em(10);
+        }
+    }
+}

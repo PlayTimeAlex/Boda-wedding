@@ -1,0 +1,147 @@
+.pr{
+    &-button{
+        font-family: $base__font;
+        display: inline-block;
+        text-decoration: none;
+        background-color: #F9F6F3;
+        border: 1px solid #EBDCC7;
+        $color: #ac9a68;
+        color: $color;
+        $font-size: 14;
+        font-size: rem($font-size);
+        font-weight: 600;
+        border-radius: rem(17);
+        padding: rem(8) rem(33);
+        transition:background-color .3s, color .3s;
+        cursor: pointer;
+        line-height: 1.5;
+        box-sizing: border-box;
+        &:hover{
+            background-color: $color;
+            color: #fff;
+        }
+        &_block{
+            display: block;
+            width: 100%;
+        }
+        &_static{
+            cursor: default;
+            &:hover{
+                background-color: #F9F6F3;
+                color: $color;
+            }
+        }
+        &_spaced{
+            margin: rem(5);
+        }
+    }
+    &-separator{
+        overflow: hidden;
+        .sp{
+            display: block;
+            position: relative;
+            bottom: 0;
+            width: 6px;
+            height: 6px;
+            background-color: #AC9A68;
+            border-radius: 50%;
+            margin: em(30) auto;
+            &:after, &:before{
+                content:"";
+                display: block;
+                position: absolute;
+                width: 2000px;
+                height: 1px;
+                background-color: #AC9A68;
+                left: em(-2025);
+                top: 50%;
+            }
+            &:after{
+                left: auto;
+                right: em(-2025);
+            }
+        }
+        &_t2 .sp{
+            font-family: $base__second-font;
+            $font-size: 60;
+            font-size: em($font-size);
+            line-height: 1;
+            width: auto;
+            height: auto;
+            margin: em(8, $font-size) auto em(20, $font-size);
+            color: #ac9a68;
+            border-radius: 0;
+            vertical-align: middle;
+            width: 0.5em;
+            background-color: transparent;
+            height: 0.5em;
+            margin: em(10, $font-size) auto em(15, $font-size);
+            &:after, &:before{
+                left: em(-2015, $font-size);
+            }
+            &:after{
+                left: auto;
+                right: em(-2015, $font-size);
+            }
+        }
+    }
+    &-scrollbtn{
+        display: block;
+        position: fixed;
+        $font-size: 14;
+        font-size: rem($font-size);
+        text-transform: uppercase;
+        bottom: em(65, $font-size);
+        right: em(8, $font-size);
+        z-index: 20;
+        background-color: rgba(63, 40, 40, 0.5);
+        border: 1px solid #FFF;
+        color: #FFF;
+        text-decoration: none;
+        padding: em(16, $font-size) em(42, $font-size);
+        border-radius:em(40, $font-size);
+        background-visibility:hidden;
+    }
+    &-list{
+        $font-size: 17;
+        li{
+            color: rgba(255,255,255, .8);
+            font-size: em($font-size);
+            position: relative;
+            list-style:none;
+            padding: em(16, $font-size) 0;
+        }
+        &_numbrer{
+            counter-reset: list;
+            li{
+                padding-left:em(83, $font-size);
+                &:before{
+                    counter-increment: list;
+                    content: counter(list);
+                    display: block;
+                    position: absolute;
+                    top: em(10, $font-size);
+                    left: em(15, $font-size);
+                    border-radius:50%;
+                    text-align: center;
+                    color: #DCC7A8;
+                    font-family: $base__second-font;
+                    font-size: em(24, $font-size);
+                    font-weight: 700;
+                    background-color: rgba(37, 6, 6, .29);
+                    min-width: em(25, $font-size);
+                    line-height: em(25, $font-size);
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $base__size_sm*1px) {
+    .pr{
+        &-scrollbtn{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.b-breadcrumbs{
+    padding: em(15) 0;
+    &__item{
+        display: inline-block;
+        color: #A3A3A3;
+        $font-size: 14;
+        font-size: em($font-size);
+        text-decoration: none;
+        padding: 0 em(10, $font-size) 0 em(14, $font-size);
+        position: relative;
+        &:first-child{
+            padding-left: 0;
+            &:before{
+                display: none;
+            }
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+        &:before{
+            content:"";
+            position: absolute;
+            display: block;
+            width: 4px;
+            height: 4px;
+            top: 50%;
+            left: 0;
+            margin: -2px 0 0;
+            border-radius:50%;
+            background-color: #a3a3a3;
+        }
+    }
+}
+
+@media (max-width: $base__size_xs*1px) {
+    .b-breadcrumbs{
+        text-align: center;
+    }
+}

@@ -1,0 +1,139 @@
+.b-header{
+    padding-bottom: em(35);
+    box-sizing: border-box;
+    position: relative;
+    &_fs{
+        height: 100vh;
+        min-height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        padding-bottom: em(180);
+        .b-breadcrumbs{
+            &__item{
+                color: #fff;
+                &:before{
+                    background-color: #fff;
+                }
+            }
+
+        }
+
+        .b-tnav{
+            border-bottom:0;
+            background-color: rgba(63,40,40,.5);
+            &__link{
+                color: #fff;
+            }
+        }
+    }
+    &__top{
+        background-color: #491a1a;
+        padding: em(7) 0 em(10);
+        position: relative;
+        z-index: 10;
+    }
+    &__tel{
+        display: inline-block;
+        text-decoration: none;
+        color: rgba(255,255,255,.6);
+        $font-size: 14;
+        font-size: em($font-size);
+        font-weight: 300;
+        padding-right: em(25, $font-size);
+        strong{
+            font-weight: 600;
+        }
+    }
+    &__skype{
+        color: rgba(255,255,255,.6);
+        $font-size: 15;
+        font-size: em($font-size);
+        font-weight: 600;
+        text-decoration: none;
+        &:before{
+            content:"";
+            display: inline-block;
+            background: url(../images/b64/skype.png) no-repeat;
+            width: 19px;
+            height: 19px;
+            margin-right: 9px;
+            vertical-align: middle;
+            opacity: .6;
+        }
+    }
+    &__text{
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        color: #FFF;
+        text-transform: uppercase;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+        padding-top: em(170);
+        h3{
+            font-family: 'Philosopher', sans-serif;
+            $font-size: 60;
+            font-size: em($font-size);
+            line-height: 1.1;
+            padding: em(10, $font-size) 0;
+        }
+        h4{
+            $font-size: 28;
+            font-size: em($font-size);;
+        }
+    }
+
+    &__play{
+        display: inline-block;
+        width: em(89);
+        height: em(89);
+        background: url(../images/b64/play.png) no-repeat;
+        background-size: cover;
+        margin: em(15) 0;
+    }
+
+    &__video{
+        position: absolute;
+        top:0%;
+        left:0%;
+        height:100%;
+        width:100%;
+        overflow: hidden;
+        video {
+            position:absolute;
+            z-index:0;
+        }
+        video.fillWidth {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: $base__size_sm*1px) {
+    .b-header{
+        &_fs{
+            height: auto;
+            min-height: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        &__top{
+            text-align: center;
+        }
+        &__row{
+            padding-bottom: em(10);
+        }
+        &__text{
+            padding-top: em(30);
+            h3{
+                $font-size: 40;
+                font-size: em($font-size);
+                
+            }
+        }
+        &__video{
+            display: none;
+        }
+    }
+}

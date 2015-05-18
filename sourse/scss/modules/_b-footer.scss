@@ -1,0 +1,35 @@
+.b-footer{
+    padding: em(35) 0;
+    &__created{
+        $font-size: 14;
+        font-size: em($font-size);
+        a{
+            font-weight: 600;
+        }
+        &:before{
+            content:"";
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: em(8, $font-size);
+            width: 14px;
+            height: 14px;
+            background: url(../images/b64/heart.png) no-repeat;
+        }
+    }
+    &__copyright{
+        $font-size: 14;
+        font-size: em($font-size);
+    }
+}
+
+@media (max-width: $base__size_sm*1px) {
+    .b-footer{
+        text-align: center;
+        padding: em(10) 0;
+        &__created{
+            $font-size: 14;
+            font-size: em($font-size);
+            padding: em(5, $font-size) 0;
+        }
+    }
+}
