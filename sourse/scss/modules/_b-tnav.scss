@@ -1,7 +1,7 @@
 .b-tnav{
     border-bottom:2px solid #6d4747;
     position: relative;
-    z-index: 10;
+    z-index: 20;
     &__list{
         display: flex;
         justify-content: space-between;
@@ -14,10 +14,72 @@
         font-weight: 600;
         text-transform: uppercase;
         display: block;
-        padding: em(20, $font-size) 0;
+        padding: em(20, $font-size) em(17, $font-size) em(20, $font-size) 0;
+        position: relative;
+        &_sub{
+            padding: em(5, $font-size) em(40, $font-size);
+            &:hover{
+                background-color: rgba(63,40,40,.5);
+            }
+        }
     }
     &__list-item{
         list-style:none;
         position: relative;
+    }
+    &__submenu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 200px;
+        background-color: rgba(63,40,40,.5);
+        padding: em(15) 0;
+    }
+    &__open-sub{
+        display: block;
+        position: absolute;
+        width: em(10);
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        background-image: url(../images/b64/arrow_bottom.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+@media (max-width: $base__size_sm*1px) {
+    .b-tnav{
+        border-bottom:0;
+        background-color: rgba(0, 0, 0, .5);
+        &__list{
+            display: block;
+        }
+        &__link{
+            color: #FFF;
+            $font-size: 14;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: em(13, $font-size) em(40, $font-size) em(13, $font-size) em(20, $font-size);
+            border-bottom:1px solid rgba(255,255,255,.3);
+            &_sub{
+                padding-left: em(40, $font-size);
+            }
+        }
+        &__list-item:last-child &__link{
+            border-bottom:0;
+        }
+        &__submenu{
+            position: relative;
+            width: auto;
+            background-color: rgba(63,40,40,0);
+            padding: 0;
+        }
+        &__open-sub{
+            width: em(40);
+            background-position: 10px center;
+        }
     }
 }
