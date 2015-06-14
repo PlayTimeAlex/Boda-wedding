@@ -17,6 +17,10 @@
     text-align: center;
 }
 
+strong{
+    font-weight: 600;
+}
+
 @media (max-width: $base__size_sm*1px) {
     .align-center-sm {
         text-align: center;
@@ -29,6 +33,8 @@
 @import "modules/b-mcontent";
 @import "modules/b-footer";
 @import "modules/_colorbox";
+@import "modules/b-form";
+@import "modules/jquery.formstyler";
 
 @import "modules/b-contacts";
 @import "modules/b-map";
@@ -44,5 +50,10 @@
 @import "modules/b-menu";
 
 @import "modules/b-video";
+
+@import "modules/jquery-ui";
+@import "modules/jquery-ui.structure";
+@import "modules/jquery-ui.theme";
+
 
 

@@ -1,0 +1,102 @@
+@@include('blocks/_head.html')
+<header class="b-header">
+    @@include('blocks/_b-header__top.html')
+    @@include('blocks/_b-tnav.html')
+</header>
+@@include('blocks/_b-breadcrumbs.html')
+<div class="b-mcontent">
+<div class="b-mcontent__pattern"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="b-mcontent__title">
+                <h1 class="title">Рассчитать стоимость свадьбы</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="b-text">
+                <p>Алексей и Ольга Журба — одни из создателей международного бренда ImoLife и Центра Индивидуального Развития «УСПЕХ» с 2006 года. Мы вместе уже 23 года. Мы можем с уверенностью назвать себя людьми, которые создали себя заново, основываясь на своих ценностях. Наши программы прошли более 10000 учеников с Украины, России, Европы и Средней Азии.</p>
+            </div>
+            <form class="b-form" action="/">
+                <div class="b-form__el">
+                    <label class="b-form__label" for="testid-1">Желаемая дата свадьбы</label>
+                    <input class="b-form__text b-form__datepicker" type="text" id="testid-1"/>
+                </div>
+                <div class="b-form__el">
+                    <label class="b-form__label" for="testid-2">Примерное количество человек: <strong><span class="testid-2">1</span></strong></label>
+                    <input id="testid-2" type="hidden" value="0"/>
+                    <div class="b-form__slider" data-el="testid-2" data-max="300" data-min="1"></div>
+                    <label class="b-form__label" for="testid-3">Комментарий</label>
+                    <textarea class="b-form__textarea" rows="5" id="testid-3"></textarea>
+                </div>
+                <div class="b-form__el">
+                    <label class="b-form__label" for="testid-4">Сколько номеров вы планируете забронировать в отеле Mas Falet 1682: <strong><span class="testid-4">0</span></strong></label>
+                    <input id="testid-4" type="hidden" value="0"/>
+                    <div class="b-form__slider" data-el="testid-4" data-max="11" data-min="0"></div>
+                    <label class="b-form__label" for="testid-5">Комментарий</label>
+                    <textarea class="b-form__textarea" rows="5" id="testid-5"></textarea>
+                </div>
+                <div class="b-form__el">
+                    <label class="b-form__label" for="testid-6">Сколько номеров вы планируете забронировать в отеле Mas Falet 1682: <strong><span class="testid-6">0</span></strong></label>
+                    <input id="testid-6" type="hidden" value="0"/>
+                    <div class="b-form__slider" data-el="testid-6" data-max="30" data-min="0"></div>
+                    <label class="b-form__label" for="testid-7">Комментарий</label>
+                    <textarea class="b-form__textarea" rows="5" id="testid-7"></textarea>
+                </div>
+                <fieldset class="b-form__fieldset">
+                    <legend class="b-form__legend">Дополнительные услуги</legend>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Регистратор выездной церемонии</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Фотографа</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Видеографа</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Ведущий</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Живая музыка</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Шоу-программа</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>DJ</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Салют</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Стилист и визажист</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Свадебный торт</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label-checkbox"><input type="checkbox" class="b-form__checkbox"/><div class="b-form__checkbox-img"></div>Дополнительное размещение гостей</label>
+                    </div>
+                    <div class="b-form__el">
+                        <label class="b-form__label" for="testid-8">Декор и флористика</label>
+                        <select class="b-form__select" id="testid-8">
+                            <option value="">&nbsp;</option>
+                            <option value="">минимальный уровень</option>
+                            <option value="">средний уровень</option>
+                            <option value="">высокий уровень</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div class="b-form__el align-center">
+                    <button class="pr-button b-form__submit" type="submit">Рассчитать стоимость свадьбы</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-contacts.html')
+</div>
+@@include('blocks/_b-footer.html')

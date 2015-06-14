@@ -1,0 +1,85 @@
+.b-form{
+    &__label{
+        display: block;
+        color: #3C3C3C;
+        $font-size: 17;
+        font-size: em($font-size);
+        padding: em(2, $font-size) 0;
+    }
+    &__el{
+        padding-bottom: em(10);
+    }
+    &__text, &__textarea{
+        display: block;
+        color: #6D6658;
+        $font-size: 14;
+        font-size: em($font-size);
+        background-color: #F5F3EF;
+        border: 1px solid #CFC8BC;
+        border-radius: em(5, $font-size);
+        box-shadow: 0 1px 0 #FFF, inset 0 1px 3px rgba(0, 0, 0, 0.2);
+        height: em(30, $font-size);
+        padding: 0 em(10, $font-size);
+        box-sizing: border-box;
+        width: em(400, $font-size);
+        max-width: 100%;
+        font-family: $base__font;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__textarea{
+        height: auto;
+        resize: none;
+        $font-size: 14;
+        padding: em(5, $font-size) em(10, $font-size);
+    }
+    &__slider{
+        font-size: $base__font-size *1px!important;
+        width: em(400);
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: em(5) 0;
+    }
+    &__fieldset{
+        margin: em(15) 0 0;
+    }
+    &__legend{
+        $font-size: 20;
+        font-size: em($font-size);
+        color: #7A1E1D;
+        font-weight: 600;
+        margin-bottom: em(10, $font-size);
+    }
+    &__checkbox{
+        display: none;
+    }
+    &__label-checkbox{
+        display: block;
+        color: #3C3C3C;
+        $font-size: 15;
+        font-size: em($font-size);
+        padding: em(2, $font-size) 0;
+        user-select: none;
+    }
+    &__checkbox-img{
+        content:"";
+        display: inline-block;
+        font-size: $base__font-size *1px;
+        width: em(17);
+        height: em(17);
+        background-color: #FFF;
+        border: 1px solid #e0dbd2;
+        border-radius: 3px;
+        vertical-align: middle;
+        margin-right: em(5);
+        margin-top: em(-3);
+    }
+    &__checkbox:checked + &__checkbox-img {
+        background: url(../images/b64/check-f.png) no-repeat center center;
+        background-size: contain;
+    }
+    &__submit{
+        margin: em(20) 0;
+    }
+}
