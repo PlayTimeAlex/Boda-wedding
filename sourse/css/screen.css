@@ -848,25 +848,29 @@ strong {
       background-color: rgba(63, 40, 40, 0.5); }
       .b-header_fs .b-tnav__link {
         color: #fff; }
+        .b-header_fs .b-tnav__link_home {
+          background: url(../images/b64/home.svg) no-repeat center center;
+          color: transparent; }
   .b-header__top {
     background-color: #491a1a;
     padding: 0.7em 0 1em;
     position: relative;
-    z-index: 10; }
+    z-index: 30; }
   .b-header__tel {
     display: inline-block;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.4em;
     font-weight: 300;
-    padding-right: 1.78571em; }
+    padding: 0.71429em 1.78571em 0.35714em 0; }
     .b-header__tel strong {
       font-weight: 600; }
   .b-header__skype {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.5em;
     font-weight: 600;
-    text-decoration: none; }
+    text-decoration: none;
+    padding-top: 0.66667em; }
     .b-header__skype:before {
       content: "";
       display: inline-block;
@@ -907,7 +911,13 @@ strong {
     overflow: hidden; }
     .b-header__video video {
       position: absolute;
-      z-index: 0; }
+      z-index: 0;
+      object-fit: cover;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
     .b-header__video video.fillWidth {
       width: 100%; }
   .b-header__mobmenubtn {
@@ -920,6 +930,24 @@ strong {
     display: none;
     border: none;
     cursor: pointer; }
+  .b-header__lng .jq-selectbox {
+    vertical-align: middle; }
+    .b-header__lng .jq-selectbox__select {
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background-color: transparent;
+      font-size: 1.3em;
+      color: rgba(255, 255, 255, 0.6);
+      padding: 0.38462em 1.69231em 0.38462em 1em;
+      border-radius: 1.15385em; }
+    .b-header__lng .jq-selectbox__trigger {
+      border-top: 5px solid rgba(255, 255, 255, 0.6);
+      border-left: 3px solid rgba(255, 255, 255, 0);
+      border-right: 3px solid rgba(255, 255, 255, 0);
+      width: 0;
+      right: 11px;
+      top: 50%;
+      margin-top: -2px;
+      height: 0; }
 
 @media (max-width: 768px) {
   .b-header_fs {
@@ -930,6 +958,10 @@ strong {
     background-position: 50% 50%; }
     .b-header_fs .b-tnav {
       background-color: rgba(0, 0, 0, 0.8); }
+      .b-header_fs .b-tnav__link_home {
+        width: auto;
+        background-image: none;
+        color: #fff; }
   .b-header__top {
     padding: 1.5em 75px 1.5em 0; }
   .b-header__text {
@@ -939,8 +971,16 @@ strong {
   .b-header__video {
     display: none; }
   .b-header__mobmenubtn {
-    display: block; } }
+    display: block; }
+  .b-header__tel {
+    padding-top: 0; }
+  .b-header__skype {
+    padding-top: 0; } }
 
+.b-social_header {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 1.8em; }
 .b-social_db {
   padding: 4.2em 0; }
 .b-social__item {
@@ -1002,6 +1042,11 @@ strong {
       padding: 0.35714em 2.85714em; }
       .b-tnav__link_sub:hover {
         background-color: rgba(63, 40, 40, 0.5); }
+    .b-tnav__link_home {
+      width: 2.85714em;
+      background: url(../images/b64/home_red.svg) no-repeat center center;
+      color: transparent;
+      overflow: hidden; }
   .b-tnav__list-item {
     list-style: none;
     position: relative; }
@@ -1044,7 +1089,7 @@ strong {
       border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
       .b-tnav__link_sub {
         padding-left: 2.85714em; }
-    .b-tnav__list-item:last-child .b-tnav__link {
+    .b-tnav__list-item:last-child > .b-tnav__link {
       border-bottom: 0; }
     .b-tnav__submenu {
       position: relative;
@@ -2146,8 +2191,7 @@ html[xmlns] .slides {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    position: relative;
-    box-shadow: 0 0 26.9px 5.1px rgba(56, 36, 34, 0.19); }
+    position: relative; }
   .b-slider .slides {
     overflow: hidden; }
     .b-slider .slides li {
@@ -2155,7 +2199,9 @@ html[xmlns] .slides {
       display: none; }
       .b-slider .slides li > img {
         display: block;
-        max-width: 100%; }
+        max-width: 640px;
+        margin: 0 auto;
+        width: 100%; }
   .b-slider .flex-prev, .b-slider .flex-next {
     display: block;
     position: absolute;

@@ -24,10 +24,14 @@
                 <a class="b-header__skype hidden-xs" href="skype:boda.wedding">boda.wedding</a>
             </div>
             <div class="col-sm-6 col-xs-12 align-right hidden-xs">
-                <div class="b-social">
+                <div class="b-social b-social_header">
                     <a target="_blank" class="b-social__item b-social__item_vk" href="#"></a><a target="_blank" class="b-social__item b-social__item_inst" href="#"></a><a
                     target="_blank" class="b-social__item b-social__item_fb" href="#"></a><a target="_blank" class="b-social__item b-social__item_yt" href="#"></a><a target="_blank" class="b-social__item b-social__item_vm" href="#"></a>
                 </div>
+                <select class="b-header__lng">
+                    <option value="http://google.com/">EN</option>
+                    <option value="http://google.com/">RU</option>
+                </select>
             </div>
         </div>
         <button class="b-header__mobmenubtn"></button>
@@ -36,6 +40,7 @@
     <nav class="b-tnav">
     <div class="container">
         <ul class="b-tnav__list">
+            <li class="b-tnav__list-item"><a class="b-tnav__link b-tnav__link_home" href="index.html" title="Главная">Главная</a></li>
             <li class="b-tnav__list-item"><a class="b-tnav__link" href="portfolio.html">Портфолио</a></li>
             <li class="b-tnav__list-item"><a class="b-tnav__link" href="#">О замке</a></li>
             <li class="b-tnav__list-item b-tnav__list-item_parent">
@@ -57,6 +62,13 @@
             <li class="b-tnav__list-item"><a class="b-tnav__link" href="#">организаторам</a></li>
             <li class="b-tnav__list-item"><a class="b-tnav__link" href="#">блог</a></li>
             <li class="b-tnav__list-item"><a class="b-tnav__link" href="contacts.html">Контакты</a></li>
+            <li class="b-tnav__list-item b-tnav__list-item_parent">
+                <a class="b-tnav__link" href="#">Язык<span class="b-tnav__open-sub"></span></a>
+                <ul class="b-tnav__submenu">
+                    <li class="b-tnav__list-item"><a class="b-tnav__link b-tnav__link_sub" href="#">En</a></li>
+                    <li class="b-tnav__list-item"><a class="b-tnav__link b-tnav__link_sub" href="#">Ru</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>
@@ -72,7 +84,7 @@
         <h4>В старинном испанском замке у моря</h4>
     </div>
     <div class="b-header__video">
-        <video autoplay loop class="fillWidth">
+        <video autoplay loop class="fillWidth b-header__video-video">
             <source src="video/header-video.mp4" type="video/mp4"/>
             <source src="video/header-video.ogg" type="video/ogg"/>
             <source src="video/header-video.webm" type="video/webm"/>

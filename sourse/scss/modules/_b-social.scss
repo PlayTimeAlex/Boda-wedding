@@ -1,4 +1,9 @@
 .b-social{
+    &_header{
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 em(18);
+    }
     &_db{
         padding: em(42) 0;
     }

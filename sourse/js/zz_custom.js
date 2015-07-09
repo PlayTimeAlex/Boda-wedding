@@ -129,7 +129,23 @@
 
         }));
 
-        $('.b-form__select').styler();
+        $('.b-form__select, .b-header__lng').styler();
+
+        $('.b-header__lng').on('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+
+        if($('.b-header__video-video').length){
+            objectFit.polyfill({
+                selector: '.b-header__video-video',
+                fittype: 'cover',
+                disableCrossDomain: 'true'
+            });
+        }
     });
 
     $(window).load(function() {
@@ -137,7 +153,7 @@
             prevText: "Следующий",
             nextText: "Предыдущий",
             controlNav: false,
-            smoothHeight: false,
+            smoothHeight: true,
             pauseOnHover: true
         });
     });
