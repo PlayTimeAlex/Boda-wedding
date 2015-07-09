@@ -25,6 +25,7 @@
         margin-left:(-$base__max-width/2)*1px;
         background-color: #fff;
         z-index: -1;
+        transform: translateZ(0);
         &:before{
             content:"";
             display: block;
