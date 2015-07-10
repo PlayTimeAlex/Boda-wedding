@@ -1245,7 +1245,9 @@ strong {
   .b-mcontent__title {
     padding-top: 5em;
     padding-bottom: 2em;
-    background-position: center 3em; } }
+    background-position: center 3em; }
+    .b-mcontent__title .title {
+      font-size: 3em; } }
 
 .b-footer {
   padding: 3.5em 0; }
@@ -2100,7 +2102,7 @@ button.styler[disabled], input[type="button"].styler[disabled], input[type="subm
     text-align: center;
     color: #7A1E1D;
     font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.7em;
+    font-size: 1.4em;
     font-weight: 700;
     font-style: italic; }
   .b-services__separator {
@@ -2152,7 +2154,12 @@ button.styler[disabled], input[type="button"].styler[disabled], input[type="subm
 
 @media (max-width: 480px) {
   .b-services {
-    padding-bottom: 4em; } }
+    padding-bottom: 4em; }
+    .b-services__img {
+      width: 13em;
+      height: 13em; }
+      .b-services__img img {
+        margin: 1.5em; } }
 
 /* Browser Resets
 *********************************/

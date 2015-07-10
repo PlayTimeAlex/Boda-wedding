@@ -26,7 +26,7 @@
         text-align: center;
         color: #7A1E1D;
         font-family: $base__second-font;
-        $font-size: 17;
+        $font-size: 14;
         font-size: em($font-size);
         font-weight: 700;
         font-style: italic;
@@ -95,5 +95,12 @@
 @media (max-width: $base__size_xs*1px){
     .b-services{
         padding-bottom: em(40);
+        &__img{
+            width: em(130);
+            height: em(130);
+            img{
+                margin: em(15);
+            }
+        }
     }
 }

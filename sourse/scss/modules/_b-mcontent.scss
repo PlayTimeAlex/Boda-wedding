@@ -122,6 +122,10 @@
             padding-top: em(50);
             padding-bottom: em(20);
             background-position: center em(30);
+            .title{
+                $font-size: 30;
+                font-size: em($font-size);
+            }
         }
     }
 }
