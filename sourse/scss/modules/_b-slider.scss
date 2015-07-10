@@ -144,3 +144,11 @@ html[xmlns] .slides {display: block;}
         }
     }
 }
+@media (max-width: $base__size_xs*1px) {
+    .b-slider{
+        padding-bottom: em(50);
+        .flex-prev, .flex-next{
+            padding: rem(8) rem(15);
+        }
+    }
+}

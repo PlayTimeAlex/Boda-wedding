@@ -959,7 +959,8 @@ strong {
     .b-header_fs .b-tnav {
       background-color: rgba(0, 0, 0, 0.8); }
       .b-header_fs .b-tnav__link_home {
-        color: #fff; }
+        color: #fff;
+        background-image: none; }
   .b-header__top {
     padding: 1.5em 75px 1.5em 0; }
   .b-header__text {
@@ -2292,6 +2293,12 @@ html[xmlns] .slides {
       padding: 1.5em 1.5em 0;
       width: 100%;
       box-sizing: border-box; } }
+
+@media (max-width: 480px) {
+  .b-slider {
+    padding-bottom: 5em; }
+    .b-slider .flex-prev, .b-slider .flex-next {
+      padding: 0.8rem 1.5rem; } }
 
 .b-scontent {
   width: 48em;
