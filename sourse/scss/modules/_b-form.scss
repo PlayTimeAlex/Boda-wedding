@@ -43,6 +43,7 @@
     }
     &__fieldset{
         margin: em(15) 0 0;
+        min-width: 0;
     }
     &__legend{
         $font-size: 20;

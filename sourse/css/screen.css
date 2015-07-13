@@ -1509,7 +1509,8 @@ strong {
   box-sizing: border-box;
   margin: 0.5em 0; }
 .b-form__fieldset {
-  margin: 1.5em 0 0; }
+  margin: 1.5em 0 0;
+  min-width: 0; }
 .b-form__legend {
   font-size: 2em;
   color: #7A1E1D;
@@ -1911,7 +1912,7 @@ button.styler[disabled], input[type="button"].styler[disabled], input[type="subm
   padding: 11.9em 0 11.2em;
   text-align: center;
   z-index: 10;
-  margin-top: 5em; }
+  margin-top: -0.2em; }
   .b-contacts:before {
     content: "";
     display: block;

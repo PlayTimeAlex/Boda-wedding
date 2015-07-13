@@ -19,10 +19,8 @@
 
         $(".colorbox-yt").colorbox({
             iframe:true,
-            width:640,
-            height:390,
-            maxWidth: "90%",
-            maxheight:"90%"
+            width: "90%",
+            height:"90%"
         });
 
 
