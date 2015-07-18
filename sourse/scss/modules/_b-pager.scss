@@ -1,0 +1,27 @@
+.b-pager{
+    text-align: center;
+    padding: em(45) 0;
+    &__link{
+        $font-size: 14;
+        font-size: em($font-size);
+        color: #ac9a68;
+        font-weight: 600;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0 em(5, $font-size);
+        vertical-align: middle;
+        &:hover{
+            text-decoration: underline;
+        }
+        &_current{
+            font-weight: 700;
+            cursor: default;
+            color: #9a5c5c;
+        }
+    }
+    &__mk{
+        padding: 0 em(10);
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

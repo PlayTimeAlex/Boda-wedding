@@ -4,6 +4,7 @@
     background-size: 100% auto;
     position: relative;
     z-index: 10;
+    padding-bottom: em(45);
     &__dbg{
         background: url(../images/content/contacts-bg.jpg) no-repeat center center;
         background-size: cover;

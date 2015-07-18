@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,600,300&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic,300italic,400italic,400,700,600,300&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic);
 /*font-family: 'Open Sans', sans-serif;*/
 /*font-family: 'Philosopher', sans-serif;*/
@@ -1148,7 +1148,8 @@ strong {
   background: url(../images/content/mcontent-bg.jpg) no-repeat center bottom;
   background-size: 100% auto;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  padding-bottom: 4.5em; }
   .b-mcontent__dbg {
     background: url(../images/content/contacts-bg.jpg) no-repeat center center;
     background-size: cover;
@@ -1482,6 +1483,28 @@ strong {
 */
 .cboxIE #cboxTopLeft, .cboxIE #cboxTopCenter, .cboxIE #cboxTopRight, .cboxIE #cboxBottomLeft, .cboxIE #cboxBottomCenter, .cboxIE #cboxBottomRight, .cboxIE #cboxMiddleLeft, .cboxIE #cboxMiddleRight {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); }
+
+/*yt*/
+#colorbox.colorbox-yt-popup #cboxTopLeft, #colorbox.colorbox-yt-popup #cboxTopRight, #colorbox.colorbox-yt-popup #cboxBottomLeft, #colorbox.colorbox-yt-popup #cboxBottomRight, #colorbox.colorbox-yt-popup #cboxMiddleLeft, #colorbox.colorbox-yt-popup #cboxMiddleRight, #colorbox.colorbox-yt-popup #cboxTopCenter, #colorbox.colorbox-yt-popup #cboxBottomCenter {
+  display: none;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0; }
+#colorbox.colorbox-yt-popup #cboxLoadedContent {
+  margin-bottom: 0; }
+#colorbox.colorbox-yt-popup #cboxClose {
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTAwIDUwMCIgaWQ9IkxheWVyXzEiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxjaXJjbGUgY3g9IjI0OS45IiBjeT0iMjUwLjQiIHI9IjIwNC43IiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPjxjaXJjbGUgY3g9IjI0OS45IiBjeT0iMjQ3LjQiIGZpbGw9IiNGRkZGRkYiIHI9IjE4MS44IiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPjxsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMjIiIHgxPSIxNjIiIHgyPSIzMzcuOCIgeTE9IjE1OS41IiB5Mj0iMzM1LjMiLz48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIyIiB4MT0iMzM3LjgiIHgyPSIxNjIiIHkxPSIxNTkuNSIgeTI9IjMzNS4zIi8+PC9zdmc+) no-repeat 50% 50%; }
+  #colorbox.colorbox-yt-popup #cboxClose:hover {
+    opacity: 1; }
 
 .b-form__label {
   display: block;
@@ -4493,5 +4516,48 @@ html[xmlns] .slides {
   filter: Alpha(Opacity=20);
   /* support: IE8 */
   border-radius: 5px; }
+
+.b-post {
+  padding: 2.5em 0 0; }
+  .b-post__title {
+    font-size: 2em;
+    font-style: italic;
+    color: #7a1e1d;
+    font-weight: 700; }
+  .b-post__time {
+    font-size: 1.6em;
+    color: #646464;
+    font-style: italic;
+    font-weight: 300; }
+  .b-post__image {
+    display: block;
+    border-radius: 50%;
+    max-width: 100%; }
+
+@media (max-width: 480px) {
+  .b-post__image {
+    margin: 0 auto 1.5em; } }
+
+.b-pager {
+  text-align: center;
+  padding: 4.5em 0; }
+  .b-pager__link {
+    font-size: 1.4em;
+    color: #ac9a68;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 0.35714em;
+    vertical-align: middle; }
+    .b-pager__link:hover {
+      text-decoration: underline; }
+    .b-pager__link_current {
+      font-weight: 700;
+      cursor: default;
+      color: #9a5c5c; }
+  .b-pager__mk {
+    padding: 0 1em;
+    display: inline-block;
+    vertical-align: middle; }
 
 /*grid*/

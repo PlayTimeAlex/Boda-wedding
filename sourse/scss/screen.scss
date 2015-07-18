@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,600,300&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic,300italic,400italic,400,700,600,300&subset=latin,cyrillic);
 /*font-family: 'Open Sans', sans-serif;*/
 @import url(http://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic);
 /*font-family: 'Philosopher', sans-serif;*/
@@ -54,6 +54,8 @@ strong{
 @import "modules/jquery-ui";
 @import "modules/jquery-ui.structure";
 @import "modules/jquery-ui.theme";
+@import "modules/b-post";
+@import "modules/b-pager";
 
 
 

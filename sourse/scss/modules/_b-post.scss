@@ -1,0 +1,31 @@
+.b-post{
+    padding: em(25) 0 0;
+    &__title{
+        $font-size: 20;
+        font-size: em($font-size);
+        font-style: italic;
+        color: #7a1e1d;
+        font-weight: 700;
+    }
+    &__time{
+        $font-size: 16;
+        font-size: em($font-size);
+        color: #646464;
+        font-style: italic;
+        font-weight: 300;
+    }
+    &__image{
+        display: block;
+        border-radius: 50%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: $base__size_xs*1px){
+    .b-post{
+        &__image{
+            margin: 0 auto em(15);
+        }
+    }
+
+}
