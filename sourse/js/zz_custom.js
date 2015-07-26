@@ -149,8 +149,8 @@
 
     $(window).load(function() {
         $('.b-slider__slider').flexslider({
-            prevText: "Следующий",
-            nextText: "Предыдущий",
+            prevText: "<<",
+            nextText: ">>",
             controlNav: false,
             smoothHeight: true,
             pauseOnHover: true
