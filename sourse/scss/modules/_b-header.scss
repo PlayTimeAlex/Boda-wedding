@@ -175,7 +175,7 @@
             }
         }
         &__top{
-            padding: em(15) 75px em(15) 0;
+            padding: em(15) 75px;
         }
         &__text{
             padding-top: em(30);
@@ -193,9 +193,17 @@
         }
         &__tel{
             padding-top: 0;
+            text-align: center;
+            display: block;
+            padding-right: 0;
         }
         &__skype{
             padding-top: 0;
+        }
+        &__lng{
+            position: absolute!important;
+            top: 7px;
+            left: 10px;
         }
     }
 }

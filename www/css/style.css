@@ -962,7 +962,7 @@ strong {
         color: #fff;
         background-image: none; }
   .b-header__top {
-    padding: 1.5em 75px 1.5em 0; }
+    padding: 1.5em 75px; }
   .b-header__text {
     padding-top: 3em; }
     .b-header__text h3 {
@@ -972,9 +972,16 @@ strong {
   .b-header__mobmenubtn {
     display: block; }
   .b-header__tel {
-    padding-top: 0; }
+    padding-top: 0;
+    text-align: center;
+    display: block;
+    padding-right: 0; }
   .b-header__skype {
-    padding-top: 0; } }
+    padding-top: 0; }
+  .b-header__lng {
+    position: absolute !important;
+    top: 7px;
+    left: 10px; } }
 
 .b-social_header {
   display: inline-block;
