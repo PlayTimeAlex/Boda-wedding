@@ -4567,4 +4567,38 @@ html[xmlns] .slides {
     display: inline-block;
     vertical-align: middle; }
 
+.b-tabs__tab {
+  display: none;
+  opacity: 0; }
+  .b-tabs__tab_current {
+    display: block; }
+.b-tabs__link {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #F9F6F3;
+  border: 1px solid #EBDCC7;
+  color: #ac9a68;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 1.7rem;
+  padding: 0.8rem 2rem;
+  -webkit-transition: background-color .3s, color .3s;
+          transition: background-color .3s, color .3s;
+  cursor: pointer;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin-bottom: 0.71429em; }
+  .b-tabs__link:hover {
+    background-color: #ac9a68;
+    color: #fff; }
+  .b-tabs__link_current {
+    background-color: #ac9a68;
+    color: #fff;
+    cursor: default; }
+
+@media (max-width: 768px) {
+  .b-tabs__link {
+    display: block; } }
+
 /*grid*/

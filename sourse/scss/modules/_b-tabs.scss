@@ -1,0 +1,45 @@
+.b-tabs{
+    &__tab{
+        display: none;
+        opacity: 0;
+        &_current{
+            display: block;
+        }
+    }
+    &__link{
+        font-family: $base__font;
+        display: inline-block;
+        text-decoration: none;
+        background-color: #F9F6F3;
+        border: 1px solid #EBDCC7;
+        $color: #ac9a68;
+        color: $color;
+        $font-size: 14;
+        font-size: rem($font-size);
+        font-weight: 600;
+        border-radius: rem(17);
+        padding: rem(8) rem(20);
+        transition:background-color .3s, color .3s;
+        cursor: pointer;
+        line-height: 1.5;
+        box-sizing: border-box;
+        margin-bottom: em(10, $font-size);
+        &:hover{
+            background-color: $color;
+            color: #fff;
+        }
+        &_current{
+            background-color: $color;
+            color: #fff;
+            cursor: default;
+        }
+    }
+}
+
+@media (max-width: $base__size_sm*1px) {
+    .b-tabs{
+        &__link{
+            display: block;
+        }
+    }
+}

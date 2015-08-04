@@ -145,6 +145,27 @@
                 disableCrossDomain: 'true'
             });
         }
+
+        $('.b-tabs__link').on('click', function(e){
+            e.preventDefault();
+            if($(this).hasClass('b-tabs__link_current'))
+                return false;
+
+            var $parent = $(this).closest('.b-tabs'),
+                tab = $(this).attr('href');
+            $parent.find('.b-tabs__link').removeClass('b-tabs__link_current');
+            $(this).addClass('b-tabs__link_current');
+
+            $parent.find('.b-tabs__tab_current').animate({
+                opacity: 0
+            }, 150, function(){
+                $(this).removeClass('b-tabs__tab_current');
+                $(tab).addClass('b-tabs__tab_current');
+                $(tab).animate({
+                    opacity: 1
+                }, 150);
+            });
+        });
     });
 
     $(window).load(function() {
